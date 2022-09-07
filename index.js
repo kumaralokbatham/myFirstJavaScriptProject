@@ -12,5 +12,22 @@ function findDistinctNumberArray(arr) {
 }
 
 const result = findDistinctNumberArray(myFirstArrray);
-console.log(result);
+
+
+//New Program 
+
+const person = {
+    firstName : "Alok",
+    lastName : "Batham",
+    set fullName (value) {
+        const valueArr = value.split(' ');
+        this.firstName = valueArr[0];
+        this.lastName = valueArr[1];
+    }
+}
+
+console.log(person.firstName, person.lastName);
+person.fullName = 'Alok KumarBatham';
+console.log(person.firstName, person.lastName);
+
 
