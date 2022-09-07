@@ -25,9 +25,20 @@ const person = {
         this.lastName = valueArr[1];
     }
 }
-
-console.log(person.firstName, person.lastName);
 person.fullName = 'Alok KumarBatham';
-console.log(person.firstName, person.lastName);
+
+
+// find rate after discount 
+function getSum(discount, ...arguments) {
+    let totalAmount = 0;
+    for (let amount of arguments) {
+        totalAmount = totalAmount + amount;
+    }
+  const amountToPay = totalAmount - (totalAmount * discount)/100;
+  console.log(amountToPay);
+  return amountToPay;
+}
+getSum(10, 30, 20, 30, 50);
+
 
 
