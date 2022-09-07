@@ -8,10 +8,11 @@ function findDistinctNumberArray(arr) {
         tempArr.push(arr[i]);
     }
   }
+ // console.log(tempArr);
  return tempArr;
 }
 
-const result = findDistinctNumberArray(myFirstArrray);
+findDistinctNumberArray(myFirstArrray);
 
 
 //New Program 
@@ -35,7 +36,7 @@ function getSum(discount, ...arguments) {
         totalAmount = totalAmount + amount;
     }
   const amountToPay = totalAmount - (totalAmount * discount)/100;
-  console.log(amountToPay);
+  //console.log(amountToPay);
   return amountToPay;
 }
 getSum(10, 30, 20, 30, 50);
